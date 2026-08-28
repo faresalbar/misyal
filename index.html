@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misyal Café — مقهى مسيال</title>
+  <meta name="description" content="Misyal Café — specialty coffee, fresh food, and a warm place to gather. مقهى مسيال — قهوة مختصة وأجواء دافئة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="brand">
+        <span class="brand-mark">☕</span>
+        <span class="brand-text" data-en="Misyal" data-ar="مسيال">Misyal</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-en="About" data-ar="عن المقهى">About</a></li>
+        <li><a href="#menu" data-en="Menu" data-ar="القائمة">Menu</a></li>
+        <li><a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a href="#visit" data-en="Visit" data-ar="زورونا">Visit</a></li>
+        <li>
+          <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+            <span data-en="العربية" data-ar="English">العربية</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="eyebrow" data-en="Specialty Coffee · Est. 2026" data-ar="قهوة مختصة · تأسّس ٢٠٢٦">Specialty Coffee · Est. 2026</p>
+      <h1 class="hero-title" data-en="Where every cup tells a story" data-ar="حيث يروي كل فنجان حكاية">Where every cup tells a story</h1>
+      <p class="hero-sub" data-en="Freshly roasted beans, homemade pastries, and a cozy corner to call your own — in the heart of the city." data-ar="حبوب محمّصة طازجة، معجنات منزلية، وركنٌ دافئ يخصّك — في قلب المدينة.">Freshly roasted beans, homemade pastries, and a cozy corner to call your own — in the heart of the city.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary" data-en="View Menu" data-ar="تصفّح القائمة">View Menu</a>
+        <a href="#visit" class="btn btn-ghost" data-en="Find Us" data-ar="أين نحن">Find Us</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span data-en="Scroll" data-ar="مرّر">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-media">
+        <div class="about-img about-img-1" role="img" aria-label="Barista pouring latte art"></div>
+        <div class="about-img about-img-2" role="img" aria-label="Coffee beans"></div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow" data-en="Our Story" data-ar="قصتنا">Our Story</p>
+        <h2 class="section-title" data-en="A little café with a big heart" data-ar="مقهى صغير بقلبٍ كبير">A little café with a big heart</h2>
+        <p data-en="Misyal began with a simple idea: bring people together over great coffee. We source our beans from ethical farms, roast them in small batches, and serve them with care. Every detail — from the milk foam to the morning playlist — is chosen to make your visit feel like home." data-ar="بدأ مسيال بفكرة بسيطة: أن نجمع الناس حول قهوةٍ رائعة. نختار حبوبنا من مزارع مسؤولة، ونحمّصها بكميات صغيرة، ونقدّمها بعناية. كل تفصيلة — من رغوة الحليب إلى موسيقى الصباح — اخترناها لتشعروا بأنكم في بيتكم.">Misyal began with a simple idea: bring people together over great coffee. We source our beans from ethical farms, roast them in small batches, and serve them with care. Every detail — from the milk foam to the morning playlist — is chosen to make your visit feel like home.</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-num">12+</span>
+            <span class="stat-label" data-en="Coffee origins" data-ar="مصادر قهوة">Coffee origins</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label" data-en="Fresh daily" data-ar="طازج يومياً">Fresh daily</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">☕</span>
+            <span class="stat-label" data-en="Made with love" data-ar="بحب">Made with love</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-head center">
+        <p class="section-eyebrow" data-en="What We Serve" data-ar="ماذا نقدّم">What We Serve</p>
+        <h2 class="section-title" data-en="Our Menu" data-ar="قائمتنا">Our Menu</h2>
+      </div>
+
+      <div class="menu-cats">
+        <div class="menu-cat">
+          <h3 class="menu-cat-title" data-en="Hot Coffee" data-ar="قهوة ساخنة">Hot Coffee</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Espresso" data-ar="إسبريسو">Espresso</span><span class="menu-item-desc" data-en="Rich, bold single shot" data-ar="جرعة غنية وقوية">Rich, bold single shot</span></div>
+              <span class="menu-item-price">10</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Cappuccino" data-ar="كابتشينو">Cappuccino</span><span class="menu-item-desc" data-en="Espresso, steamed milk, foam" data-ar="إسبريسو وحليب مبخّر ورغوة">Espresso, steamed milk, foam</span></div>
+              <span class="menu-item-price">16</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Flat White" data-ar="فلات وايت">Flat White</span><span class="menu-item-desc" data-en="Velvety microfoam, double shot" data-ar="رغوة ناعمة وجرعتان">Velvety microfoam, double shot</span></div>
+              <span class="menu-item-price">17</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Spanish Latte" data-ar="سبانش لاتيه">Spanish Latte</span><span class="menu-item-desc" data-en="Sweet condensed milk latte" data-ar="لاتيه بالحليب المكثف">Sweet condensed milk latte</span></div>
+              <span class="menu-item-price">18</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
+          <h3 class="menu-cat-title" data-en="Cold Drinks" data-ar="مشروبات باردة">Cold Drinks</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Iced Latte" data-ar="آيس لاتيه">Iced Latte</span><span class="menu-item-desc" data-en="Chilled espresso & milk" data-ar="إسبريسو وحليب مثلّج">Chilled espresso & milk</span></div>
+              <span class="menu-item-price">18</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Cold Brew" data-ar="كولد برو">Cold Brew</span><span class="menu-item-desc" data-en="18-hour slow steep" data-ar="نقع بطيء ١٨ ساعة">18-hour slow steep</span></div>
+              <span class="menu-item-price">19</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Iced Matcha" data-ar="آيس ماتشا">Iced Matcha</span><span class="menu-item-desc" data-en="Ceremonial grade green tea" data-ar="شاي أخضر درجة احتفالية">Ceremonial grade green tea</span></div>
+              <span class="menu-item-price">20</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Fresh Lemonade" data-ar="ليموناضة طازجة">Fresh Lemonade</span><span class="menu-item-desc" data-en="Mint & citrus cooler" data-ar="نعناع وحمضيات منعشة">Mint & citrus cooler</span></div>
+              <span class="menu-item-price">15</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
+          <h3 class="menu-cat-title" data-en="Bakery" data-ar="مخبوزات">Bakery</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Butter Croissant" data-ar="كرواسون بالزبدة">Butter Croissant</span><span class="menu-item-desc" data-en="Baked fresh each morning" data-ar="يُخبز طازجاً كل صباح">Baked fresh each morning</span></div>
+              <span class="menu-item-price">12</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Cinnamon Roll" data-ar="سينامون رول">Cinnamon Roll</span><span class="menu-item-desc" data-en="Warm, gooey, glazed" data-ar="دافئة ولزجة ومغطّاة">Warm, gooey, glazed</span></div>
+              <span class="menu-item-price">14</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Cheesecake" data-ar="تشيز كيك">Cheesecake</span><span class="menu-item-desc" data-en="New York style, berry sauce" data-ar="نيويورك مع صلصة التوت">New York style, berry sauce</span></div>
+              <span class="menu-item-price">22</span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item-info"><span class="menu-item-name" data-en="Date Cake" data-ar="كيكة التمر">Date Cake</span><span class="menu-item-desc" data-en="Local dates, toffee drizzle" data-ar="تمر محلي وصوص التوفي">Local dates, toffee drizzle</span></div>
+              <span class="menu-item-price">16</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="menu-note" data-en="Prices in SAR. Ask our team about seasonal specials 🍂" data-ar="الأسعار بالريال. اسألوا فريقنا عن العروض الموسمية 🍂">Prices in SAR. Ask our team about seasonal specials 🍂</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-head center">
+        <p class="section-eyebrow" data-en="A Peek Inside" data-ar="لمحة من الداخل">A Peek Inside</p>
+        <h2 class="section-title" data-en="The Misyal Vibe" data-ar="أجواء مسيال">The Misyal Vibe</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g1" role="img" aria-label="Latte art"></div>
+        <div class="gallery-item g2" role="img" aria-label="Café interior"></div>
+        <div class="gallery-item g3" role="img" aria-label="Pastries on display"></div>
+        <div class="gallery-item g4" role="img" aria-label="Coffee beans roasting"></div>
+        <div class="gallery-item g5" role="img" aria-label="Friends chatting over coffee"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section class="visit section" id="visit">
+    <div class="container visit-grid">
+      <div class="visit-info">
+        <p class="section-eyebrow" data-en="Come Say Hi" data-ar="مرّوا علينا">Come Say Hi</p>
+        <h2 class="section-title" data-en="Visit Us" data-ar="زورونا">Visit Us</h2>
+        <ul class="visit-list">
+          <li>
+            <span class="visit-icon">📍</span>
+            <div>
+              <strong data-en="Address" data-ar="العنوان">Address</strong>
+              <p data-en="King Fahd Road, Al Olaya, Riyadh" data-ar="طريق الملك فهد، العليا، الرياض">King Fahd Road, Al Olaya, Riyadh</p>
+            </div>
+          </li>
+          <li>
+            <span class="visit-icon">🕘</span>
+            <div>
+              <strong data-en="Hours" data-ar="ساعات العمل">Hours</strong>
+              <p data-en="Sun–Thu: 7:00 AM – 11:00 PM · Fri–Sat: 8:00 AM – 1:00 AM" data-ar="الأحد–الخميس: ٧ ص – ١١ م · الجمعة–السبت: ٨ ص – ١ ص">Sun–Thu: 7:00 AM – 11:00 PM · Fri–Sat: 8:00 AM – 1:00 AM</p>
+            </div>
+          </li>
+          <li>
+            <span class="visit-icon">📞</span>
+            <div>
+              <strong data-en="Contact" data-ar="تواصل">Contact</strong>
+              <p><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></p>
+            </div>
+          </li>
+        </ul>
+        <div class="socials">
+          <a href="#" class="social" aria-label="Instagram">Instagram</a>
+          <a href="#" class="social" aria-label="TikTok">TikTok</a>
+          <a href="#" class="social" aria-label="WhatsApp">WhatsApp</a>
+        </div>
+      </div>
+      <div class="visit-map" role="img" aria-label="Map location placeholder">
+        <div class="map-pin">📍</div>
+        <span class="map-label" data-en="Al Olaya, Riyadh" data-ar="العليا، الرياض">Al Olaya, Riyadh</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">☕</span>
+        <span data-en="Misyal Café" data-ar="مقهى مسيال">Misyal Café</span>
+      </div>
+      <p class="footer-tag" data-en="Brewed with love, served with a smile." data-ar="نُحضّرها بحب، ونقدّمها بابتسامة.">Brewed with love, served with a smile.</p>
+      <p class="footer-copy">© <span id="year"></span> Misyal Café · <span data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">All rights reserved</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

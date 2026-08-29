@@ -1,238 +1,165 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Misyal Café — مقهى مسيال</title>
-  <meta name="description" content="Misyal Café — specialty coffee, fresh food, and a warm place to gather. مقهى مسيال — قهوة مختصة وأجواء دافئة." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مسيال · Misyaal Specialty Coffee</title>
+<meta name="description" content="مسيال · Misyaal — Specialty coffee, house desserts and fresh toast in Al Faisaliyah, Taif.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7EEDC;color:#0C4A3E;-webkit-font-smoothing:antialiased}
+a{color:#0C4A3E;text-decoration:none}
+a:hover{color:#B06A2C}
+@keyframes rev{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+[data-reveal]{animation:rev .9s cubic-bezier(.22,.8,.3,1) both;animation-timeline:view();animation-range:entry 0% cover 26%}
+@keyframes drift{from{transform:scale(1.06) translateY(0)}to{transform:scale(1.12) translateY(-2%)}}
+::selection{background:#0C4A3E;color:#F7EEDC}
+.h-lang:hover{background:#0C4A3E !important;color:#F7EEDC !important}
+.h-cta:hover{background:#0a3b32 !important;color:#F7EEDC !important}
+.h-heroA:hover{background:#fff !important;color:#0C4A3E !important}
+.h-heroB:hover{background:rgba(247,238,220,.14) !important;color:#F7EEDC !important}
+.h-ig:hover{color:#E8C89A !important}
+.h-igBtn:hover{background:#0a3b32 !important;color:#F7EEDC !important}
+.h-menuBtn:hover{background:rgba(12,74,62,.07) !important}
+.h-footlink:hover{color:#E8C89A !important}
+.new-card .new-img{transition:transform .8s cubic-bezier(.22,.8,.3,1)}
+.new-card:hover .new-img{transform:scale(1.05)}
+</style>
 </head>
 <body>
-  <!-- Header / Nav -->
-  <header class="site-header" id="top">
-    <nav class="nav container">
-      <a href="#top" class="brand">
-        <span class="brand-mark">☕</span>
-        <span class="brand-text" data-en="Misyal" data-ar="مسيال">Misyal</span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about" data-en="About" data-ar="عن المقهى">About</a></li>
-        <li><a href="#menu" data-en="Menu" data-ar="القائمة">Menu</a></li>
-        <li><a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
-        <li><a href="#visit" data-en="Visit" data-ar="زورونا">Visit</a></li>
-        <li>
-          <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-            <span data-en="العربية" data-ar="English">العربية</span>
-          </button>
-        </li>
-      </ul>
+<div style="font-family:'Tajawal',system-ui,sans-serif;overflow-x:hidden;background:#F7EEDC;color:#0C4A3E">
+
+  <header style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 28px;background:rgba(247,238,220,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(12,74,62,.13)">
+    <a href="#top" style="display:flex;align-items:baseline;gap:10px">
+      <span style="font-family:'Aref Ruqaa',serif;font-size:30px;font-weight:700;letter-spacing:.02em;color:#0C4A3E">مسيال</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:.34em;color:rgba(12,74,62,.6)">MISYAAL</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:26px;font-size:14px">
+      <a href="menu.html" data-ar="المنيو" data-en="Menu">المنيو</a>
+      <a href="#hours" data-ar="أوقات العمل" data-en="Hours">أوقات العمل</a>
+      <a href="#visit" data-ar="زورنا" data-en="Visit">زورنا</a>
     </nav>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button onclick="MISYAAL.toggle()" class="h-lang" style="cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:.18em;padding:9px 16px;border:1px solid rgba(12,74,62,.3);border-radius:999px;background:transparent;color:#0C4A3E" data-ar="EN" data-en="ع">EN</button>
+      <a href="menu.html" class="h-cta" style="font-size:13px;padding:10px 18px;border-radius:999px;background:#0C4A3E;color:#F7EEDC" data-ar="تصفح المنيو" data-en="Browse the menu">تصفح المنيو</a>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <p class="eyebrow" data-en="Specialty Coffee · Est. 2026" data-ar="قهوة مختصة · تأسّس ٢٠٢٦">Specialty Coffee · Est. 2026</p>
-      <h1 class="hero-title" data-en="Where every cup tells a story" data-ar="حيث يروي كل فنجان حكاية">Where every cup tells a story</h1>
-      <p class="hero-sub" data-en="Freshly roasted beans, homemade pastries, and a cozy corner to call your own — in the heart of the city." data-ar="حبوب محمّصة طازجة، معجنات منزلية، وركنٌ دافئ يخصّك — في قلب المدينة.">Freshly roasted beans, homemade pastries, and a cozy corner to call your own — in the heart of the city.</p>
-      <div class="hero-actions">
-        <a href="#menu" class="btn btn-primary" data-en="View Menu" data-ar="تصفّح القائمة">View Menu</a>
-        <a href="#visit" class="btn btn-ghost" data-en="Find Us" data-ar="أين نحن">Find Us</a>
-      </div>
-    </div>
-    <div class="scroll-hint" aria-hidden="true">
-      <span data-en="Scroll" data-ar="مرّر">Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about section" id="about">
-    <div class="container about-grid">
-      <div class="about-media">
-        <div class="about-img about-img-1" role="img" aria-label="Barista pouring latte art"></div>
-        <div class="about-img about-img-2" role="img" aria-label="Coffee beans"></div>
-      </div>
-      <div class="about-text">
-        <p class="section-eyebrow" data-en="Our Story" data-ar="قصتنا">Our Story</p>
-        <h2 class="section-title" data-en="A little café with a big heart" data-ar="مقهى صغير بقلبٍ كبير">A little café with a big heart</h2>
-        <p data-en="Misyal began with a simple idea: bring people together over great coffee. We source our beans from ethical farms, roast them in small batches, and serve them with care. Every detail — from the milk foam to the morning playlist — is chosen to make your visit feel like home." data-ar="بدأ مسيال بفكرة بسيطة: أن نجمع الناس حول قهوةٍ رائعة. نختار حبوبنا من مزارع مسؤولة، ونحمّصها بكميات صغيرة، ونقدّمها بعناية. كل تفصيلة — من رغوة الحليب إلى موسيقى الصباح — اخترناها لتشعروا بأنكم في بيتكم.">Misyal began with a simple idea: bring people together over great coffee. We source our beans from ethical farms, roast them in small batches, and serve them with care. Every detail — from the milk foam to the morning playlist — is chosen to make your visit feel like home.</p>
-        <div class="stats">
-          <div class="stat">
-            <span class="stat-num">12+</span>
-            <span class="stat-label" data-en="Coffee origins" data-ar="مصادر قهوة">Coffee origins</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">100%</span>
-            <span class="stat-label" data-en="Fresh daily" data-ar="طازج يومياً">Fresh daily</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">☕</span>
-            <span class="stat-label" data-en="Made with love" data-ar="بحب">Made with love</span>
-          </div>
-        </div>
+  <section id="top" style="position:relative;min-height:88vh;display:grid;place-items:center;overflow:hidden;background:#0C4A3E">
+    <div style="position:absolute;inset:0;background-image:url(uploads/assets-1787937089938-kfcq.jpeg);background-size:cover;background-position:center;opacity:.5;animation:drift 18s ease-in-out infinite alternate"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,74,62,.55),rgba(12,74,62,.2) 40%,rgba(12,74,62,.85))"></div>
+    <div style="position:relative;text-align:center;padding:120px 24px 90px;color:#F7EEDC">
+      <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:.42em;opacity:.75">SPECIALTY COFFEE · TAIF</p>
+      <h1 style="margin:0;font-family:'Aref Ruqaa',serif;font-size:clamp(70px,13vw,168px);line-height:1.15;font-weight:700">مسيال</h1>
+      <p style="margin:20px 0 0;font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,34px);letter-spacing:.3em;opacity:.9">MISYAAL</p>
+      <p style="margin:26px auto 0;max-width:520px;font-size:16px;line-height:1.85;opacity:.85;text-wrap:pretty" data-ar="قهوة مختصة، حلا بيتي، وتوست طازج — من ٧ الصباح إلى ٣ الفجر في الفيصلية بالطائف." data-en="Specialty coffee, house desserts and fresh toast — 7am to 3am in Al Faisaliyah, Taif.">قهوة مختصة، حلا بيتي، وتوست طازج — من ٧ الصباح إلى ٣ الفجر في الفيصلية بالطائف.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:38px">
+        <a href="menu.html" class="h-heroA" style="padding:15px 34px;border-radius:999px;background:#F7EEDC;color:#0C4A3E;font-size:15px" data-ar="تصفح المنيو" data-en="Browse the menu">تصفح المنيو</a>
+        <a href="#visit" class="h-heroB" style="padding:15px 34px;border-radius:999px;border:1px solid rgba(247,238,220,.5);color:#F7EEDC;font-size:15px" data-ar="الموقع والأوقات" data-en="Hours & location">الموقع والأوقات</a>
       </div>
     </div>
   </section>
 
-  <!-- Menu -->
-  <section class="menu section" id="menu">
-    <div class="container">
-      <div class="section-head center">
-        <p class="section-eyebrow" data-en="What We Serve" data-ar="ماذا نقدّم">What We Serve</p>
-        <h2 class="section-title" data-en="Our Menu" data-ar="قائمتنا">Our Menu</h2>
-      </div>
-
-      <div class="menu-cats">
-        <div class="menu-cat">
-          <h3 class="menu-cat-title" data-en="Hot Coffee" data-ar="قهوة ساخنة">Hot Coffee</h3>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Espresso" data-ar="إسبريسو">Espresso</span><span class="menu-item-desc" data-en="Rich, bold single shot" data-ar="جرعة غنية وقوية">Rich, bold single shot</span></div>
-              <span class="menu-item-price">10</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Cappuccino" data-ar="كابتشينو">Cappuccino</span><span class="menu-item-desc" data-en="Espresso, steamed milk, foam" data-ar="إسبريسو وحليب مبخّر ورغوة">Espresso, steamed milk, foam</span></div>
-              <span class="menu-item-price">16</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Flat White" data-ar="فلات وايت">Flat White</span><span class="menu-item-desc" data-en="Velvety microfoam, double shot" data-ar="رغوة ناعمة وجرعتان">Velvety microfoam, double shot</span></div>
-              <span class="menu-item-price">17</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Spanish Latte" data-ar="سبانش لاتيه">Spanish Latte</span><span class="menu-item-desc" data-en="Sweet condensed milk latte" data-ar="لاتيه بالحليب المكثف">Sweet condensed milk latte</span></div>
-              <span class="menu-item-price">18</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="menu-cat">
-          <h3 class="menu-cat-title" data-en="Cold Drinks" data-ar="مشروبات باردة">Cold Drinks</h3>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Iced Latte" data-ar="آيس لاتيه">Iced Latte</span><span class="menu-item-desc" data-en="Chilled espresso & milk" data-ar="إسبريسو وحليب مثلّج">Chilled espresso & milk</span></div>
-              <span class="menu-item-price">18</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Cold Brew" data-ar="كولد برو">Cold Brew</span><span class="menu-item-desc" data-en="18-hour slow steep" data-ar="نقع بطيء ١٨ ساعة">18-hour slow steep</span></div>
-              <span class="menu-item-price">19</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Iced Matcha" data-ar="آيس ماتشا">Iced Matcha</span><span class="menu-item-desc" data-en="Ceremonial grade green tea" data-ar="شاي أخضر درجة احتفالية">Ceremonial grade green tea</span></div>
-              <span class="menu-item-price">20</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Fresh Lemonade" data-ar="ليموناضة طازجة">Fresh Lemonade</span><span class="menu-item-desc" data-en="Mint & citrus cooler" data-ar="نعناع وحمضيات منعشة">Mint & citrus cooler</span></div>
-              <span class="menu-item-price">15</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="menu-cat">
-          <h3 class="menu-cat-title" data-en="Bakery" data-ar="مخبوزات">Bakery</h3>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Butter Croissant" data-ar="كرواسون بالزبدة">Butter Croissant</span><span class="menu-item-desc" data-en="Baked fresh each morning" data-ar="يُخبز طازجاً كل صباح">Baked fresh each morning</span></div>
-              <span class="menu-item-price">12</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Cinnamon Roll" data-ar="سينامون رول">Cinnamon Roll</span><span class="menu-item-desc" data-en="Warm, gooey, glazed" data-ar="دافئة ولزجة ومغطّاة">Warm, gooey, glazed</span></div>
-              <span class="menu-item-price">14</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Cheesecake" data-ar="تشيز كيك">Cheesecake</span><span class="menu-item-desc" data-en="New York style, berry sauce" data-ar="نيويورك مع صلصة التوت">New York style, berry sauce</span></div>
-              <span class="menu-item-price">22</span>
-            </li>
-            <li class="menu-item">
-              <div class="menu-item-info"><span class="menu-item-name" data-en="Date Cake" data-ar="كيكة التمر">Date Cake</span><span class="menu-item-desc" data-en="Local dates, toffee drizzle" data-ar="تمر محلي وصوص التوفي">Local dates, toffee drizzle</span></div>
-              <span class="menu-item-price">16</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p class="menu-note" data-en="Prices in SAR. Ask our team about seasonal specials 🍂" data-ar="الأسعار بالريال. اسألوا فريقنا عن العروض الموسمية 🍂">Prices in SAR. Ask our team about seasonal specials 🍂</p>
-    </div>
+  <section style="display:flex;gap:56px;justify-content:center;flex-wrap:wrap;padding:26px 24px;background:#0C4A3E;color:#F7EEDC;font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:.28em">
+    <span data-ar="مفتوح يوميًا ٧ص – ٣ف" data-en="OPEN DAILY 7AM – 3AM">مفتوح يوميًا ٧ص – ٣ف</span>
+    <span data-ar="فرعين · الفيصلية + درايف ثرو" data-en="2 BRANCHES · DINE-IN + DRIVE-THRU">فرعين · الفيصلية + درايف ثرو</span>
+    <a href="https://www.instagram.com/misyaal.sa" target="_blank" rel="noopener" dir="ltr" class="h-ig" style="color:#F7EEDC;letter-spacing:.2em;unicode-bidi:isolate">@MISYAAL.SA</a>
   </section>
 
-  <!-- Gallery -->
-  <section class="gallery section" id="gallery">
-    <div class="container">
-      <div class="section-head center">
-        <p class="section-eyebrow" data-en="A Peek Inside" data-ar="لمحة من الداخل">A Peek Inside</p>
-        <h2 class="section-title" data-en="The Misyal Vibe" data-ar="أجواء مسيال">The Misyal Vibe</h2>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item g1" role="img" aria-label="Latte art"></div>
-        <div class="gallery-item g2" role="img" aria-label="Café interior"></div>
-        <div class="gallery-item g3" role="img" aria-label="Pastries on display"></div>
-        <div class="gallery-item g4" role="img" aria-label="Coffee beans roasting"></div>
-        <div class="gallery-item g5" role="img" aria-label="Friends chatting over coffee"></div>
-      </div>
-    </div>
-  </section>
+  <div>
+    <section data-reveal style="padding:96px 24px 20px;text-align:center">
+      <p style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.38em;color:#B06A2C" data-ar="جديد" data-en="New">جديد</p>
+      <h2 style="margin:0;font-family:'Amiri',serif;font-size:clamp(36px,5vw,56px);font-weight:700" data-ar="وصل حديثًا" data-en="Just landed">وصل حديثًا</h2>
+    </section>
 
-  <!-- Visit -->
-  <section class="visit section" id="visit">
-    <div class="container visit-grid">
-      <div class="visit-info">
-        <p class="section-eyebrow" data-en="Come Say Hi" data-ar="مرّوا علينا">Come Say Hi</p>
-        <h2 class="section-title" data-en="Visit Us" data-ar="زورونا">Visit Us</h2>
-        <ul class="visit-list">
-          <li>
-            <span class="visit-icon">📍</span>
-            <div>
-              <strong data-en="Address" data-ar="العنوان">Address</strong>
-              <p data-en="King Fahd Road, Al Olaya, Riyadh" data-ar="طريق الملك فهد، العليا، الرياض">King Fahd Road, Al Olaya, Riyadh</p>
+    <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:26px;max-width:1180px;margin:0 auto;padding:44px 24px 96px">
+      <article data-reveal class="new-card" style="position:relative;border-radius:22px;overflow:hidden;background:#0C4A3E;aspect-ratio:4/3">
+        <div class="new-img" style="position:absolute;inset:0;background-image:url(uploads/assets-1787937089938-kfcq.jpeg);background-size:cover;background-position:center;opacity:.92"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,74,62,.9),rgba(12,74,62,0) 55%)"></div>
+        <div style="position:absolute;inset-inline-start:26px;bottom:24px;color:#F7EEDC">
+          <span style="display:inline-block;margin-bottom:10px;padding:4px 12px;border:1px solid rgba(247,238,220,.55);border-radius:999px;font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.32em">NEW</span>
+          <h3 style="margin:0;font-size:27px;font-weight:500" data-ar="تونا مسيال" data-en="Tuna Misyaal">تونا مسيال</h3>
+          <p style="margin:6px 0 0;font-size:14px;opacity:.8" data-ar="توست محمّص، تونا كريمي وزيتون" data-en="Grilled toast, creamy tuna, olives">توست محمّص، تونا كريمي وزيتون</p>
+        </div>
+      </article>
+      <article data-reveal class="new-card" style="position:relative;border-radius:22px;overflow:hidden;background:#0C4A3E;aspect-ratio:4/3">
+        <div class="new-img" style="position:absolute;inset:0;background-image:url(uploads/assets-1787937089954-9gd3.jpeg);background-size:cover;background-position:center;opacity:.92"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,74,62,.9),rgba(12,74,62,0) 55%)"></div>
+        <div style="position:absolute;inset-inline-start:26px;bottom:24px;color:#F7EEDC">
+          <span style="display:inline-block;margin-bottom:10px;padding:4px 12px;border:1px solid rgba(247,238,220,.55);border-radius:999px;font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.32em">NEW</span>
+          <h3 style="margin:0;font-size:27px;font-weight:500" data-ar="قريل أومليت تشيز" data-en="Grill Omelette Cheese">قريل أومليت تشيز</h3>
+          <p style="margin:6px 0 0;font-size:14px;opacity:.8" data-ar="بيض وجبن شيدر داخل توست سميك" data-en="Egg & cheddar inside thick-cut toast">بيض وجبن شيدر داخل توست سميك</p>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <section id="hours" style="padding:0 24px 96px">
+    <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:start">
+      <div data-reveal>
+        <p style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.38em;color:#B06A2C" data-ar="أوقات العمل" data-en="Opening hours">أوقات العمل</p>
+        <h2 style="margin:0 0 28px;font-family:'Amiri',serif;font-size:clamp(34px,4.4vw,50px);font-weight:700" data-ar="متى نفتح" data-en="When we're open">متى نفتح</h2>
+        <div style="display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 2px;border-bottom:1px solid rgba(12,74,62,.14)"><span style="font-size:16px" data-ar="الجمعة" data-en="Friday">الجمعة</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(12,74,62,.72);letter-spacing:.04em" data-ar="١٢:٣٠م – ٣:٠٠ص" data-en="12:30pm – 3:00am">١٢:٣٠م – ٣:٠٠ص</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 2px;border-bottom:1px solid rgba(12,74,62,.14)"><span style="font-size:16px" data-ar="السبت" data-en="Saturday">السبت</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(12,74,62,.72);letter-spacing:.04em" data-ar="٧:٠٠ص – ٣:٠٠ص" data-en="7:00am – 3:00am">٧:٠٠ص – ٣:٠٠ص</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 2px;border-bottom:1px solid rgba(12,74,62,.14)"><span style="font-size:16px" data-ar="الأحد" data-en="Sunday">الأحد</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(12,74,62,.72);letter-spacing:.04em" data-ar="٧:٠٠ص – ٣:٠٠ص" data-en="7:00am – 3:00am">٧:٠٠ص – ٣:٠٠ص</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 2px;border-bottom:1px solid rgba(12,74,62,.14)"><span style="font-size:16px" data-ar="الاثنين" data-en="Monday">الاثنين</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(12,74,62,.72);letter-spacing:.04em" data-ar="٧:٠٠ص – ٣:٠٠ص" data-en="7:00am – 3:00am">٧:٠٠ص – ٣:٠٠ص</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 2px;border-bottom:1px solid rgba(12,74,62,.14)"><span style="font-size:16px" data-ar="الثلاثاء" data-en="Tuesday">الثلاثاء</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(12,74,62,.72);letter-spacing:.04em" data-ar="٧:٠٠ص – ٣:٠٠ص" data-en="7:00am – 3:00am">٧:٠٠ص – ٣:٠٠ص</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 2px;border-bottom:1px solid rgba(12,74,62,.14)"><span style="font-size:16px" data-ar="الأربعاء" data-en="Wednesday">الأربعاء</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(12,74,62,.72);letter-spacing:.04em" data-ar="٧:٠٠ص – ٣:٠٠ص" data-en="7:00am – 3:00am">٧:٠٠ص – ٣:٠٠ص</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 2px;border-bottom:1px solid rgba(12,74,62,.14)"><span style="font-size:16px" data-ar="الخميس" data-en="Thursday">الخميس</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(12,74,62,.72);letter-spacing:.04em" data-ar="٧:٠٠ص – ٣:٠٠ص" data-en="7:00am – 3:00am">٧:٠٠ص – ٣:٠٠ص</span></div>
+        </div>
+      </div>
+      <div id="visit" data-reveal style="scroll-margin-top:90px">
+        <p style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.38em;color:#B06A2C" data-ar="الفروع" data-en="Branches">الفروع</p>
+        <h2 style="margin:0 0 22px;font-family:'Amiri',serif;font-size:clamp(34px,4.4vw,50px);font-weight:700" data-ar="زورنا" data-en="Come by">زورنا</h2>
+        <div style="display:grid;gap:14px;margin-bottom:24px">
+          <div style="padding:20px 22px;border:1px solid rgba(12,74,62,.16);border-radius:18px;background:rgba(255,255,255,.4)">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px">
+              <p style="margin:0;font-size:18px;font-weight:500" data-ar="فرع الفيصلية" data-en="Al Faisaliyah branch">فرع الفيصلية</p>
+              <span style="font-size:11px;letter-spacing:.06em;padding:3px 10px;border-radius:999px;background:#B06A2C;color:#F7EEDC" data-ar="جلسات" data-en="Dine-in">جلسات</span>
             </div>
-          </li>
-          <li>
-            <span class="visit-icon">🕘</span>
-            <div>
-              <strong data-en="Hours" data-ar="ساعات العمل">Hours</strong>
-              <p data-en="Sun–Thu: 7:00 AM – 11:00 PM · Fri–Sat: 8:00 AM – 1:00 AM" data-ar="الأحد–الخميس: ٧ ص – ١١ م · الجمعة–السبت: ٨ ص – ١ ص">Sun–Thu: 7:00 AM – 11:00 PM · Fri–Sat: 8:00 AM – 1:00 AM</p>
+            <p style="margin:0;font-size:15px;color:rgba(12,74,62,.7)" data-ar="الفيصلية، الطائف 26523" data-en="Al Faisaliyah, Taif 26523">الفيصلية، الطائف 26523</p>
+            <p style="margin:5px 0 0;font-size:13.5px;color:rgba(12,74,62,.55)" data-ar="جلسات داخلية وخارجية · مواقف أمام المقهى" data-en="Indoor & outdoor seating · parking out front">جلسات داخلية وخارجية · مواقف أمام المقهى</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%D9%8A%D8%A9%D8%8C%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%2026523" target="_blank" rel="noopener" style="display:inline-block;margin-top:12px;font-size:13.5px;border-bottom:1px solid rgba(12,74,62,.3);padding-bottom:2px" data-ar="الاتجاهات ↗" data-en="Directions ↗">الاتجاهات ↗</a>
+          </div>
+          <div style="padding:20px 22px;border:1px solid rgba(12,74,62,.16);border-radius:18px;background:rgba(255,255,255,.4)">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px">
+              <p style="margin:0;font-size:18px;font-weight:500" data-ar="فرع الدرايف ثرو" data-en="Drive-thru branch">فرع الدرايف ثرو</p>
+              <span style="font-size:11px;letter-spacing:.06em;padding:3px 10px;border-radius:999px;background:#B06A2C;color:#F7EEDC" data-ar="درايف ثرو" data-en="Drive-thru">درايف ثرو</span>
             </div>
-          </li>
-          <li>
-            <span class="visit-icon">📞</span>
-            <div>
-              <strong data-en="Contact" data-ar="تواصل">Contact</strong>
-              <p><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></p>
-            </div>
-          </li>
-        </ul>
-        <div class="socials">
-          <a href="#" class="social" aria-label="Instagram">Instagram</a>
-          <a href="#" class="social" aria-label="TikTok">TikTok</a>
-          <a href="#" class="social" aria-label="WhatsApp">WhatsApp</a>
+            <p style="margin:0;font-size:15px;color:rgba(12,74,62,.7)" data-ar="طريق المطار، حي الصيانة، الطائف 26551" data-en="Airport Rd, Al Sianah district, Taif 26551">طريق المطار، حي الصيانة، الطائف 26551</p>
+            <p style="margin:5px 0 0;font-size:13.5px;color:rgba(12,74,62,.55)" data-ar="استلام من السيارة بدون نزول" data-en="Order and pick up without leaving your car">استلام من السيارة بدون نزول</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=%D8%B7%D8%B1%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B1%D8%8C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%D8%8C%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%2026551" target="_blank" rel="noopener" style="display:inline-block;margin-top:12px;font-size:13.5px;border-bottom:1px solid rgba(12,74,62,.3);padding-bottom:2px" data-ar="الاتجاهات ↗" data-en="Directions ↗">الاتجاهات ↗</a>
+          </div>
         </div>
-      </div>
-      <div class="visit-map" role="img" aria-label="Map location placeholder">
-        <div class="map-pin">📍</div>
-        <span class="map-label" data-en="Al Olaya, Riyadh" data-ar="العليا، الرياض">Al Olaya, Riyadh</span>
+        <iframe title="map" src="https://www.openstreetmap.org/export/embed.html?bbox=40.35%2C21.22%2C40.48%2C21.32&amp;layer=mapnik" style="width:100%;aspect-ratio:16/10;border:1px solid rgba(12,74,62,.16);border-radius:20px;display:block" loading="lazy"></iframe>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:22px">
+          <a href="https://www.instagram.com/misyaal.sa" target="_blank" rel="noopener" dir="ltr" class="h-igBtn" style="padding:13px 26px;border-radius:999px;background:#0C4A3E;color:#F7EEDC;font-size:14px;unicode-bidi:isolate">@misyaal.sa</a>
+          <a href="menu.html" class="h-menuBtn" style="padding:13px 26px;border-radius:999px;border:1px solid rgba(12,74,62,.3);font-size:14px" data-ar="تصفح المنيو" data-en="Browse the menu">تصفح المنيو</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="brand-mark">☕</span>
-        <span data-en="Misyal Café" data-ar="مقهى مسيال">Misyal Café</span>
+  <footer style="background:#0C4A3E;color:#F7EEDC;padding:64px 24px 40px">
+    <div style="max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
+      <div>
+        <p style="margin:0;font-family:'Aref Ruqaa',serif;font-size:42px;font-weight:700">مسيال</p>
+        <p style="margin:6px 0 0;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.34em;opacity:.65">MISYAAL SPECIALTY COFFEE</p>
       </div>
-      <p class="footer-tag" data-en="Brewed with love, served with a smile." data-ar="نُحضّرها بحب، ونقدّمها بابتسامة.">Brewed with love, served with a smile.</p>
-      <p class="footer-copy">© <span id="year"></span> Misyal Café · <span data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">All rights reserved</span></p>
+      <div style="display:flex;gap:26px;font-size:14px;opacity:.85">
+        <a href="menu.html" class="h-footlink" style="color:#F7EEDC" data-ar="المنيو" data-en="Menu">المنيو</a>
+        <a href="#hours" class="h-footlink" style="color:#F7EEDC" data-ar="أوقات العمل" data-en="Hours">أوقات العمل</a>
+      </div>
     </div>
+    <p style="max-width:1120px;margin:38px auto 0;padding-top:20px;border-top:1px solid rgba(247,238,220,.2);font-size:12px;opacity:.55"><span dir="ltr" style="unicode-bidi:isolate">© 2026 Misyaal</span> · الطائف</p>
   </footer>
 
-  <script src="script.js"></script>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
